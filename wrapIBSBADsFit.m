@@ -3,7 +3,7 @@ function ModelFit = wrapIBSBADsFit
 data = load('cleanData.mat');
 
 for iParticipant = 1:52 %1:52 %for each participant
-    for jModel = 1:3 %1:3 %for each model
+    for jModel = 2:3 %1:3 %for each model
         for kRun = 1:10 %1:10 %for ten runs
             isComplete = 0;
             tryCount = 1;
