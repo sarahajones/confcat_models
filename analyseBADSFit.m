@@ -58,7 +58,7 @@ data = (modelFits(53,:))';
 
 errlow = [abs(data(1)- ci1(1)), abs(data(2)-ci2(1))]; %, abs(data(3)-ci3(1)) ]; % abs(data(3)-ci3(1)), abs(data(4)-ci4(1))];
 errhigh = [abs(data(1)- ci1(2)), abs(data(2)-ci2(2))];% , abs(data(3)-ci3(2))]; % abs(data(3)-ci3(2)), abs(data(4)-ci4(2))];
-errBottom = [(data(1)- ci1(1)), (data(2)-ci2(1))]; %, (data(3)-ci3(1))]; %, (data(3)-ci3(1)), (data(4)-ci4(1))];
+%errBottom = [(data(1)- ci1(1)), (data(2)-ci2(1))]; %, (data(3)-ci3(1))]; %, (data(3)-ci3(1)), (data(4)-ci4(1))];
 
 figure
 bar(models,data)                
@@ -152,7 +152,7 @@ end
 hold off
 
 
-
+saveas(gcf, 'BIC_fit_plot.png')
 
 
 % %plot out param values per participant per model
