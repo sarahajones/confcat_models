@@ -40,7 +40,7 @@ thresh0 = sort(randBetweenPoints(0.1, .9, 0, 1, 4));
 threshlb =  sort(zeros(1, 4)+ 0.01);
 threshub =  sort(ones(1, 4) - 0.01);
 threshplb =  sort(zeros(1, 4) + 0.1);
-threshpub = sort(ones(1, 4))- 0.1;
+threshpub = sort(ones(1, 3))- 0.1;
 
 x0 = [lapse0 sigmaX0 metaCog0 confLapse0 thresh0];
 LB = [lapselb sigmaXlb metaCoglb confLapselb threshlb];
